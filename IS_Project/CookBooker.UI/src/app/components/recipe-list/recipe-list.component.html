@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" [(ngModel)]="filter">
+      </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">CookingTime</th>
+          <th scope="col">Servings</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of filteredRecipes">
+          <td>{{ r.id }}</td>
+          <td><a routerLink="/recipes/{{r.id}}">{{ r.title }}</a></td>
+          <td>{{ r.cookingTime }}</td>
+          <td>{{ r.servings }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

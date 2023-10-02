@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "oSuB8ABYTZDHuFTxhSwm5M8T8Iv3tzVkqTQRNF0W6Zo=",
+  "Source": "CookBooker.Web",
+  "BasePath": "_content/CookBooker.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

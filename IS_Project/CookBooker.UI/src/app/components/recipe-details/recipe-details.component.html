@@ -1,0 +1,26 @@
+<div class="container">
+<div class="card">
+    <h5 class="card-header">{{recipe.recipe.title}}</h5>
+    <div class="card-body">
+      <p class="card-text">{{recipe.recipe.description}}</p>
+      <h5 class="card-title">Instructions:</h5>
+      <p class="card-text">{{recipe.recipe.instructions}}</p>
+      <h6 class="card-title">Cooking time: {{recipe.recipe.cookingTime}}</h6>
+      <h6 class="card-title">Servings: {{recipe.recipe.servings}}</h6>
+      <h5 class="card-title mt-3">Ingredients:</h5>
+      <ul class="list-group" *ngFor="let i of recipe.ingredients">
+        <li class="list-group-item">{{ i.quantity +" "+ i.unit +" "+ i.ingredient.name }}</li>
+      </ul>
+      <a (click)="onClick()" class="btn btn-primary">Add ingredients to shopping list</a>
+    </div>
+  </div>
+</div>
+<!-- 
+// proveri dali vo kuki ima id shopping list
+// ako ima id
+// dodoadi produkti
+// else
+// kreiraj lista 
+-->
+
+
